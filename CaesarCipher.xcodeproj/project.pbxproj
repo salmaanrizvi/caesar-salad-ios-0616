@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7237D70119381AE0005AC50A /* FISCaesarCipher.m in Sources */ = {isa = PBXBuildFile; fileRef = 7237D70019381AE0005AC50A /* FISCaesarCipher.m */; };
+		7237D70419381B11005AC50A /* FISCaesarCipherSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7237D70319381B11005AC50A /* FISCaesarCipherSpec.m */; };
+		72A276DF19381A5400CC123F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A276DE19381A5400CC123F /* Foundation.framework */; };
+		72A276E119381A5400CC123F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A276E019381A5400CC123F /* CoreGraphics.framework */; };
+		72A276E319381A5400CC123F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A276E219381A5400CC123F /* UIKit.framework */; };
+		72A276E919381A5400CC123F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 72A276E719381A5400CC123F /* InfoPlist.strings */; };
+		72A276EB19381A5400CC123F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A276EA19381A5400CC123F /* main.m */; };
+		72A276EF19381A5400CC123F /* FISAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A276EE19381A5400CC123F /* FISAppDelegate.m */; };
+		72A276F119381A5400CC123F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A276F019381A5400CC123F /* Images.xcassets */; };
+		72A276F819381A5400CC123F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A276F719381A5400CC123F /* XCTest.framework */; };
+		72A276F919381A5400CC123F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A276DE19381A5400CC123F /* Foundation.framework */; };
+		72A276FA19381A5400CC123F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A276E219381A5400CC123F /* UIKit.framework */; };
+		72A2770219381A5400CC123F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 72A2770019381A5400CC123F /* InfoPlist.strings */; };
+		9151B32B59FE44F2A9F1F5C4 /* libPods-CaesarCipherTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A35E61D19274EF493AECA78 /* libPods-CaesarCipherTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		72A276FB19381A5400CC123F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72A276D319381A5400CC123F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72A276DA19381A5400CC123F;
+			remoteInfo = CaesarCipher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		384EA9271CCF264EFC2395A8 /* Pods-CaesarCipherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaesarCipherTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CaesarCipherTests/Pods-CaesarCipherTests.release.xcconfig"; sourceTree = "<group>"; };
+		7237D6FF19381AE0005AC50A /* FISCaesarCipher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISCaesarCipher.h; sourceTree = "<group>"; };
+		7237D70019381AE0005AC50A /* FISCaesarCipher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISCaesarCipher.m; sourceTree = "<group>"; };
+		7237D70319381B11005AC50A /* FISCaesarCipherSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISCaesarCipherSpec.m; sourceTree = "<group>"; };
+		72A276DB19381A5400CC123F /* CaesarCipher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaesarCipher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72A276DE19381A5400CC123F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		72A276E019381A5400CC123F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		72A276E219381A5400CC123F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		72A276E619381A5400CC123F /* CaesarCipher-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CaesarCipher-Info.plist"; sourceTree = "<group>"; };
+		72A276E819381A5400CC123F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		72A276EA19381A5400CC123F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		72A276EC19381A5400CC123F /* CaesarCipher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CaesarCipher-Prefix.pch"; sourceTree = "<group>"; };
+		72A276ED19381A5400CC123F /* FISAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FISAppDelegate.h; sourceTree = "<group>"; };
+		72A276EE19381A5400CC123F /* FISAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FISAppDelegate.m; sourceTree = "<group>"; };
+		72A276F019381A5400CC123F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		72A276F619381A5400CC123F /* CaesarCipherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaesarCipherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		72A276F719381A5400CC123F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		72A276FF19381A5400CC123F /* CaesarCipherTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CaesarCipherTests-Info.plist"; sourceTree = "<group>"; };
+		72A2770119381A5400CC123F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8A35E61D19274EF493AECA78 /* libPods-CaesarCipherTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CaesarCipherTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1B8084CD8FAF1FED08E53A /* Pods-CaesarCipherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaesarCipherTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CaesarCipherTests/Pods-CaesarCipherTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72A276D819381A5400CC123F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72A276E119381A5400CC123F /* CoreGraphics.framework in Frameworks */,
+				72A276E319381A5400CC123F /* UIKit.framework in Frameworks */,
+				72A276DF19381A5400CC123F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72A276F319381A5400CC123F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72A276F819381A5400CC123F /* XCTest.framework in Frameworks */,
+				72A276FA19381A5400CC123F /* UIKit.framework in Frameworks */,
+				72A276F919381A5400CC123F /* Foundation.framework in Frameworks */,
+				9151B32B59FE44F2A9F1F5C4 /* libPods-CaesarCipherTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7237D70219381AE7005AC50A /* fuhgettaboutit */ = {
+			isa = PBXGroup;
+			children = (
+				72A276ED19381A5400CC123F /* FISAppDelegate.h */,
+				72A276EE19381A5400CC123F /* FISAppDelegate.m */,
+			);
+			name = fuhgettaboutit;
+			sourceTree = "<group>";
+		};
+		72A276D219381A5400CC123F = {
+			isa = PBXGroup;
+			children = (
+				72A276E419381A5400CC123F /* CaesarCipher */,
+				72A276FD19381A5400CC123F /* CaesarCipherTests */,
+				72A276DD19381A5400CC123F /* Frameworks */,
+				72A276DC19381A5400CC123F /* Products */,
+				821C69DD110EA46A9AED470A /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		72A276DC19381A5400CC123F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72A276DB19381A5400CC123F /* CaesarCipher.app */,
+				72A276F619381A5400CC123F /* CaesarCipherTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		72A276DD19381A5400CC123F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72A276DE19381A5400CC123F /* Foundation.framework */,
+				72A276E019381A5400CC123F /* CoreGraphics.framework */,
+				72A276E219381A5400CC123F /* UIKit.framework */,
+				72A276F719381A5400CC123F /* XCTest.framework */,
+				8A35E61D19274EF493AECA78 /* libPods-CaesarCipherTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72A276E419381A5400CC123F /* CaesarCipher */ = {
+			isa = PBXGroup;
+			children = (
+				7237D6FF19381AE0005AC50A /* FISCaesarCipher.h */,
+				7237D70019381AE0005AC50A /* FISCaesarCipher.m */,
+				72A276F019381A5400CC123F /* Images.xcassets */,
+				7237D70219381AE7005AC50A /* fuhgettaboutit */,
+				72A276E519381A5400CC123F /* Supporting Files */,
+			);
+			path = CaesarCipher;
+			sourceTree = "<group>";
+		};
+		72A276E519381A5400CC123F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				72A276E619381A5400CC123F /* CaesarCipher-Info.plist */,
+				72A276E719381A5400CC123F /* InfoPlist.strings */,
+				72A276EA19381A5400CC123F /* main.m */,
+				72A276EC19381A5400CC123F /* CaesarCipher-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		72A276FD19381A5400CC123F /* CaesarCipherTests */ = {
+			isa = PBXGroup;
+			children = (
+				7237D70319381B11005AC50A /* FISCaesarCipherSpec.m */,
+				72A276FE19381A5400CC123F /* Supporting Files */,
+			);
+			path = CaesarCipherTests;
+			sourceTree = "<group>";
+		};
+		72A276FE19381A5400CC123F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				72A276FF19381A5400CC123F /* CaesarCipherTests-Info.plist */,
+				72A2770019381A5400CC123F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		821C69DD110EA46A9AED470A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB1B8084CD8FAF1FED08E53A /* Pods-CaesarCipherTests.debug.xcconfig */,
+				384EA9271CCF264EFC2395A8 /* Pods-CaesarCipherTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		72A276DA19381A5400CC123F /* CaesarCipher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72A2770719381A5400CC123F /* Build configuration list for PBXNativeTarget "CaesarCipher" */;
+			buildPhases = (
+				72A276D719381A5400CC123F /* Sources */,
+				72A276D819381A5400CC123F /* Frameworks */,
+				72A276D919381A5400CC123F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CaesarCipher;
+			productName = CaesarCipher;
+			productReference = 72A276DB19381A5400CC123F /* CaesarCipher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		72A276F519381A5400CC123F /* CaesarCipherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72A2770A19381A5400CC123F /* Build configuration list for PBXNativeTarget "CaesarCipherTests" */;
+			buildPhases = (
+				6910F66A9B40498C89C07D4E /* Check Pods Manifest.lock */,
+				72A276F219381A5400CC123F /* Sources */,
+				72A276F319381A5400CC123F /* Frameworks */,
+				72A276F419381A5400CC123F /* Resources */,
+				96FA0157C6F74120B7896CDB /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72A276FC19381A5400CC123F /* PBXTargetDependency */,
+			);
+			name = CaesarCipherTests;
+			productName = CaesarCipherTests;
+			productReference = 72A276F619381A5400CC123F /* CaesarCipherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72A276D319381A5400CC123F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FIS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = FIS;
+				TargetAttributes = {
+					72A276F519381A5400CC123F = {
+						TestTargetID = 72A276DA19381A5400CC123F;
+					};
+				};
+			};
+			buildConfigurationList = 72A276D619381A5400CC123F /* Build configuration list for PBXProject "CaesarCipher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 72A276D219381A5400CC123F;
+			productRefGroup = 72A276DC19381A5400CC123F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72A276DA19381A5400CC123F /* CaesarCipher */,
+				72A276F519381A5400CC123F /* CaesarCipherTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72A276D919381A5400CC123F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72A276E919381A5400CC123F /* InfoPlist.strings in Resources */,
+				72A276F119381A5400CC123F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72A276F419381A5400CC123F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72A2770219381A5400CC123F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6910F66A9B40498C89C07D4E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		96FA0157C6F74120B7896CDB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CaesarCipherTests/Pods-CaesarCipherTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72A276D719381A5400CC123F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72A276EB19381A5400CC123F /* main.m in Sources */,
+				7237D70119381AE0005AC50A /* FISCaesarCipher.m in Sources */,
+				72A276EF19381A5400CC123F /* FISAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72A276F219381A5400CC123F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7237D70419381B11005AC50A /* FISCaesarCipherSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		72A276FC19381A5400CC123F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72A276DA19381A5400CC123F /* CaesarCipher */;
+			targetProxy = 72A276FB19381A5400CC123F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		72A276E719381A5400CC123F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72A276E819381A5400CC123F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		72A2770019381A5400CC123F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72A2770119381A5400CC123F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		72A2770519381A5400CC123F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		72A2770619381A5400CC123F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		72A2770819381A5400CC123F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CaesarCipher/CaesarCipher-Prefix.pch";
+				INFOPLIST_FILE = "CaesarCipher/CaesarCipher-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		72A2770919381A5400CC123F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CaesarCipher/CaesarCipher-Prefix.pch";
+				INFOPLIST_FILE = "CaesarCipher/CaesarCipher-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		72A2770B19381A5400CC123F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB1B8084CD8FAF1FED08E53A /* Pods-CaesarCipherTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CaesarCipher.app/CaesarCipher";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CaesarCipher/CaesarCipher-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CaesarCipherTests/CaesarCipherTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		72A2770C19381A5400CC123F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 384EA9271CCF264EFC2395A8 /* Pods-CaesarCipherTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CaesarCipher.app/CaesarCipher";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CaesarCipher/CaesarCipher-Prefix.pch";
+				INFOPLIST_FILE = "CaesarCipherTests/CaesarCipherTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		72A276D619381A5400CC123F /* Build configuration list for PBXProject "CaesarCipher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72A2770519381A5400CC123F /* Debug */,
+				72A2770619381A5400CC123F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72A2770719381A5400CC123F /* Build configuration list for PBXNativeTarget "CaesarCipher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72A2770819381A5400CC123F /* Debug */,
+				72A2770919381A5400CC123F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72A2770A19381A5400CC123F /* Build configuration list for PBXNativeTarget "CaesarCipherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72A2770B19381A5400CC123F /* Debug */,
+				72A2770C19381A5400CC123F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 72A276D319381A5400CC123F /* Project object */;
+}

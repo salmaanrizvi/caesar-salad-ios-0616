@@ -4,7 +4,7 @@ tags: strings, ranges, enumberable
 ---
 
 # Caeser Cipher
-In cryptography, a Caesar cipher, also known as Caesar's cipher, the shift cipher, Caesar's code or Caesar shift, is one of the simplest and most widely known encryption techniques. [Wikipedia](http://en.wikipedia.org/wiki/Caesar_cipher)
+All Characters actually have a number corresponding with them. This is known as their ASCII number. For a chart of the ASCII -> character transition take a look [here](http://www.asciitable.com/). In cryptography, a Caesar cipher, also known as Caesar's cipher, the shift cipher, Caesar's code or Caesar shift, is one of the simplest and most widely known encryption techniques. [Wikipedia](http://en.wikipedia.org/wiki/Caesar_cipher)
 
 ## Exercise
 
@@ -21,3 +21,17 @@ andOffset:(NSInteger)key
 ```
 
 Now code how to encode and decode :)
+
+## Hint
+
+To translate from integer version to String version of a character and reverse it's pretty straight forward:
+
+```objc
+// NSString to ASCII
+NSString *string = @"A";
+NSInteger asciiCode = [string characterAtIndex:0]; // 65
+
+// ASCII to NSString
+NSInteger asciiCode = 65;
+NSString *string = [NSString stringWithFormat:@"%c", asciiCode]; // A
+```
