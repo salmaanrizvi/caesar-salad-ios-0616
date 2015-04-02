@@ -17,11 +17,6 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    NSLog(@"%i", 28%26);
-    NSLog(@"%@", [[NSCharacterSet lowercaseLetterCharacterSet] description]);
-    NSRange bullshit = [@"abc" rangeOfString:[NSString stringWithFormat:@"%c",'z']];
-    NSLog(@"%i", bullshit.location == NSNotFound);
-    
     return YES;
 }
 

@@ -82,15 +82,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7237D70219381AE7005AC50A /* fuhgettaboutit */ = {
-			isa = PBXGroup;
-			children = (
-				72A276ED19381A5400CC123F /* FISAppDelegate.h */,
-				72A276EE19381A5400CC123F /* FISAppDelegate.m */,
-			);
-			name = fuhgettaboutit;
-			sourceTree = "<group>";
-		};
 		72A276D219381A5400CC123F = {
 			isa = PBXGroup;
 			children = (
@@ -129,7 +120,8 @@
 				7237D6FF19381AE0005AC50A /* FISCaesarCipher.h */,
 				7237D70019381AE0005AC50A /* FISCaesarCipher.m */,
 				72A276F019381A5400CC123F /* Images.xcassets */,
-				7237D70219381AE7005AC50A /* fuhgettaboutit */,
+				72A276ED19381A5400CC123F /* FISAppDelegate.h */,
+				72A276EE19381A5400CC123F /* FISAppDelegate.m */,
 				72A276E519381A5400CC123F /* Supporting Files */,
 			);
 			path = CaesarCipher;
