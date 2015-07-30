@@ -1,7 +1,4 @@
----
-languages: objc
-tags: strings, ranges, enumberable
----
+
 
 # Caeser Cipher
 All Characters actually have a number corresponding with them. This is known as their ASCII number. For a chart of the ASCII -> character transition take a look [here](http://www.asciitable.com/). In cryptography, a Caesar cipher, also known as Caesar's cipher, the shift cipher, Caesar's code or Caesar shift, is one of the simplest and most widely known encryption techniques. [Wikipedia](http://en.wikipedia.org/wiki/Caesar_cipher)
