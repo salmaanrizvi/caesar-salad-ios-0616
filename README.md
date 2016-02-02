@@ -1,7 +1,7 @@
 
 
-# Caeser Ciphar
-All Characters actually have a corresponding number associated with them. This is known as their ASCII number. For a chart of the ASCII -> character transition take a look [here](http://www.asciitable.com/). In cryptography, a Caesar cipher, also known as the shift cipher, is one of the simplest and most widely known encryption techniques. [Wikipedia](http://en.wikipedia.org/wiki/Caesar_cipher)
+# Caesar Cipher
+In computer-land, all characters actually have a corresponding number associated with them, known as their ASCII number. For a chart of the ASCII -> character transition take a look [here](http://www.asciitable.com/). In cryptography, a Caesar cipher, also known as the shift cipher, is one of the simplest and most widely known encryption techniques. [Wikipedia](http://en.wikipedia.org/wiki/Caesar_cipher)
 
 ## Exercise
 
