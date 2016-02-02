@@ -9,9 +9,7 @@
 #import "Specta.h"
 #import "FISCaesarCipher.h"
 #define EXP_SHORTHAND
-#import "Expecta.h"
-#import "KIF.h"
-#import "Swizzlean.h"
+#import <Expecta/Expecta.h>
 
 SpecBegin(FISCaesarCipher)
 

@@ -194,6 +194,7 @@
 				72A276F319381A5400CC123F /* Frameworks */,
 				72A276F419381A5400CC123F /* Resources */,
 				96FA0157C6F74120B7896CDB /* Copy Pods Resources */,
+				0230C9C6BECDB7820FD9D6DD /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,6 +260,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0230C9C6BECDB7820FD9D6DD /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CaesarCipherTests/Pods-CaesarCipherTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6910F66A9B40498C89C07D4E /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
