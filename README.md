@@ -1,36 +1,37 @@
 
 
-# Caeser Cipher
-All Characters actually have a number corresponding with them. This is known as their ASCII number. For a chart of the ASCII -> character transition take a look [here](http://www.asciitable.com/). In cryptography, a Caesar cipher, also known as Caesar's cipher, the shift cipher, Caesar's code or Caesar shift, is one of the simplest and most widely known encryption techniques. [Wikipedia](http://en.wikipedia.org/wiki/Caesar_cipher)
+# Caeser Ciphar
+All Characters actually have a corresponding number associated with them. This is known as their ASCII number. For a chart of the ASCII -> character transition take a look [here](http://www.asciitable.com/). In cryptography, a Caesar cipher, also known as the shift cipher, is one of the simplest and most widely known encryption techniques. [Wikipedia](http://en.wikipedia.org/wiki/Caesar_cipher)
 
 ## Exercise
 
-You'll be writing a caeser encoder and decoder. Each method takes a string and the offset. The encoder converts the letter a with an offset of 3 to the letter d. A capital letter is always converted to a capital letter i.e Z with an offset of 2 is B. Spaces and punctuation are ignored. The decoder works in reverse.
+You'll be writing a Caesar encoder and decoder. Each method takes a string and an offset. For example, given the string "a" with an offset of 3, the encoder would produce "d", which is 3 letters after "a". A capital letter is always converted to a capital letter -- i.e "Z" with an offset of 2 is "B". Spaces and punctuation are ignored. The decoder works in reverse; it shifts in the opposite direction.
 
 Define and implement 2 methods in `FISCaesarCipher`:
 
 ```objc
--(NSString *)encodeWithMessage:(NSString *)message andOffset:(NSInteger)key
+-(NSString *)encodeMessage:(NSString *)message withOffset:(NSInteger)key
 ```
 ```objc
--(NSString *)decodeWithMessage:(NSString *)encodedMessage
-andOffset:(NSInteger)key
+-(NSString *)decodeMessage:(NSString *)encodedMessage withOffset:(NSInteger)key
 ```
 
-Now code how to encode and decode :)
+Your job is to write implement the methods!
 
 ## Hint
 
-To translate from integer version to String version of a character and reverse it's pretty straight forward:
+To translate from an ASCII integer to a string and back, you can use something like the below:
 
 ```objc
 // NSString to ASCII
 NSString *string = @"A";
-NSInteger asciiCode = [string characterAtIndex:0]; // 65
+unichar asciiCode = [string characterAtIndex:0]; // 65
 
 // ASCII to NSString
-NSInteger asciiCode = 65;
-NSString *string = [NSString stringWithFormat:@"%c", asciiCode]; // A
+unichar asciiCode = 65;
+NSString *string = [NSString stringWithFormat:@"%C", asciiCode]; // A
 ```
+
+`unichar` is another primitive type, specifically used for representing the characters of a string.
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/caesar-salad' title='Caeser Cipher'>Caeser Cipher</a> on Learn.co and start learning to code for free.</p>
