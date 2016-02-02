@@ -22,75 +22,75 @@ describe(@"FISCaesarCipher", ^{
         caesar = [[FISCaesarCipher alloc] init];
     });
    
-    describe(@"encodeWithMessage: andOffset:", ^{
+    describe(@"encodeMessage: withOffset:", ^{
         it(@"encodes one character",^{
-            expect([caesar encodeWithMessage:@"a" andOffset:3]).to.equal(@"d");
-            expect([caesar encodeWithMessage:@"a" andOffset:1]).to.equal(@"b");
-            expect([caesar encodeWithMessage:@"p" andOffset:3]).to.equal(@"s");
-            expect([caesar encodeWithMessage:@"z" andOffset:3]).to.equal(@"c");
+            expect([caesar encodeMessage:@"a" withOffset:3]).to.equal(@"d");
+            expect([caesar encodeMessage:@"a" withOffset:1]).to.equal(@"b");
+            expect([caesar encodeMessage:@"p" withOffset:3]).to.equal(@"s");
+            expect([caesar encodeMessage:@"z" withOffset:3]).to.equal(@"c");
         });
         
         it(@"returns the same value if the number is divisible by 26",^{
-            expect([caesar encodeWithMessage:@"a" andOffset:26]).to.equal(@"a");
-            expect([caesar encodeWithMessage:@"a" andOffset:52]).to.equal(@"a");
+            expect([caesar encodeMessage:@"a" withOffset:26]).to.equal(@"a");
+            expect([caesar encodeMessage:@"a" withOffset:52]).to.equal(@"a");
         });
         
         it(@"preserves uppercase",^{
-            expect([caesar encodeWithMessage:@"P" andOffset:3]).to.equal(@"S");
-            expect([caesar encodeWithMessage:@"Z" andOffset:3]).to.equal(@"C");
+            expect([caesar encodeMessage:@"P" withOffset:3]).to.equal(@"S");
+            expect([caesar encodeMessage:@"Z" withOffset:3]).to.equal(@"C");
         });
         
         it(@"does not convert spaces",^{
-            expect([caesar encodeWithMessage:@"P   P" andOffset:3]).to.equal(@"S   S");
+            expect([caesar encodeMessage:@"P   P" withOffset:3]).to.equal(@"S   S");
         });
         
         it(@"does not convert punctuation",^{
-            expect([caesar encodeWithMessage:@"*&^." andOffset:3]).to.equal(@"*&^.");
+            expect([caesar encodeMessage:@"*&^." withOffset:3]).to.equal(@"*&^.");
         });
         
         it(@"converts sentences",^{
-            expect([caesar encodeWithMessage:@"I'm a tiger" andOffset:5]).to.equal(@"N'r f ynljw");
+            expect([caesar encodeMessage:@"I'm a tiger" withOffset:5]).to.equal(@"N'r f ynljw");
         });
         
         it(@"works with crazy high offsets",^{
-            expect([caesar encodeWithMessage:@"a" andOffset:27]).to.equal(@"b");
-            expect([caesar encodeWithMessage:@"I'm a tiger" andOffset:9500]).to.equal(@"S'w k dsqob");
+            expect([caesar encodeMessage:@"a" withOffset:27]).to.equal(@"b");
+            expect([caesar encodeMessage:@"I'm a tiger" withOffset:9500]).to.equal(@"S'w k dsqob");
         });
     });
     
-   describe(@"decodeWithMessage: andOffset:", ^{
+   describe(@"decodeMessage: withOffset:", ^{
        it(@"decodes one character",^{
-           expect([caesar decodeWithMessage:@"d" andOffset:3]).to.equal(@"a");
-           expect([caesar decodeWithMessage:@"b" andOffset:1]).to.equal(@"a");
-           expect([caesar decodeWithMessage:@"s" andOffset:3]).to.equal(@"p");
-           expect([caesar decodeWithMessage:@"c" andOffset:3]).to.equal(@"z");
+           expect([caesar decodeMessage:@"d" withOffset:3]).to.equal(@"a");
+           expect([caesar decodeMessage:@"b" withOffset:1]).to.equal(@"a");
+           expect([caesar decodeMessage:@"s" withOffset:3]).to.equal(@"p");
+           expect([caesar decodeMessage:@"c" withOffset:3]).to.equal(@"z");
        });
        
        it(@"returns the same value if the number is divisible by 26",^{
-           expect([caesar decodeWithMessage:@"a" andOffset:26]).to.equal(@"a");
-           expect([caesar decodeWithMessage:@"a" andOffset:52]).to.equal(@"a");
+           expect([caesar decodeMessage:@"a" withOffset:26]).to.equal(@"a");
+           expect([caesar decodeMessage:@"a" withOffset:52]).to.equal(@"a");
        });
        
        it(@"preserves uppercase",^{
-           expect([caesar decodeWithMessage:@"S" andOffset:3]).to.equal(@"P");
-           expect([caesar decodeWithMessage:@"C" andOffset:3]).to.equal(@"Z");
+           expect([caesar decodeMessage:@"S" withOffset:3]).to.equal(@"P");
+           expect([caesar decodeMessage:@"C" withOffset:3]).to.equal(@"Z");
        });
        
        it(@"does not convert spaces",^{
-           expect([caesar decodeWithMessage:@"S   S" andOffset:3]).to.equal(@"P   P");
+           expect([caesar decodeMessage:@"S   S" withOffset:3]).to.equal(@"P   P");
        });
        
        it(@"does not convert punctuation",^{
-           expect([caesar decodeWithMessage:@"*&^." andOffset:3]).to.equal(@"*&^.");
+           expect([caesar decodeMessage:@"*&^." withOffset:3]).to.equal(@"*&^.");
        });
        
        it(@"converts sentences",^{
-           expect([caesar decodeWithMessage:@"N'r f ynljw" andOffset:5]).to.equal(@"I'm a tiger");
+           expect([caesar decodeMessage:@"N'r f ynljw" withOffset:5]).to.equal(@"I'm a tiger");
        });
        
        it(@"works with crazy high offsets",^{
-           expect([caesar decodeWithMessage:@"a" andOffset:27]).to.equal(@"z");
-           expect([caesar decodeWithMessage:@"S'w k dsqob" andOffset:9500]).to.equal(@"I'm a tiger");
+           expect([caesar decodeMessage:@"a" withOffset:27]).to.equal(@"z");
+           expect([caesar decodeMessage:@"S'w k dsqob" withOffset:9500]).to.equal(@"I'm a tiger");
        });
    });
     
