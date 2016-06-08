@@ -17,7 +17,6 @@
     self.window.backgroundColor = [UIColor blackColor];
     [self.window setRootViewController:[[UIViewController alloc] init]];
     [self.window makeKeyAndVisible];
-    
     return YES;
 }
 
